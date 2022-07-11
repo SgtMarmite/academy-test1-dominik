@@ -2,9 +2,6 @@ import csv
 import json
 from pathlib import Path
 
-#import sys
-#DATA_FOLDER = Path(sys.environ.get('KBC_DATADIR'))
-
 DATA_FOLDER = Path('/data')
 
 SOURCE_FILE_PATH = DATA_FOLDER.joinpath('in/tables/input.csv')

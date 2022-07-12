@@ -20,8 +20,8 @@ with open(SOURCE_FILE_PATH, 'r') as input, open(RESULT_FILE_PATH, 'w+', newline=
     writer.writeheader()
     for index, l in enumerate(reader):
         # print line
-        if PARAM_PRINT_LINES:
-            print(f'Printing line {index}: {l}')
         # add row number
         l['row_number'] = index
+        if PARAM_PRINT_LINES:
+            print(f'Printing line {index}: {l}')
         writer.writerow(l)
